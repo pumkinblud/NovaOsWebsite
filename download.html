@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NovaOS — Download</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <div class="brand"><div class="logo">N</div><div class="title">NovaOS</div></div>
+      <nav class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="download.html" class="active">Download</a>
+        <a href="docs.html">Docs</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <label for="menu-toggle" class="hamburger"><span></span></label>
+      <input id="menu-toggle" type="checkbox" />
+      <aside class="mobile-drawer">
+        <a href="index.html">Home</a><a href="download.html">Download</a><a href="docs.html">Docs</a><a href="contact.html">Contact</a>
+      </aside>
+    </div>
+  </header>
+
+  <main class="container page">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:18px">
+      <div>
+        <h1 class="page-title">Download NovaOS</h1>
+        <p class="page-sub text-muted">Official releases, checksums and signed files. Pick the method that suits you.</p>
+      </div>
+      <div style="text-align:right">
+        <div class="text-muted" style="font-weight:700">Latest release</div>
+        <div style="font-size:1rem;margin-top:6px">v1.2.0 • November 2025</div>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div>
+        <div class="card">
+          <h3>Direct download (HTTP)</h3>
+          <p class="text-muted">Official fast server. Click to download the ISO. Note: verify checksum after download.</p>
+
+          <div style="margin-top:12px;display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+            <a class="btn" href="YOUR_OS.iso">Download ISO</a>
+            <a class="btn-ghost" href="YOUR_OS.iso.sig">Download Signature</a>
+          </div>
+
+          <div style="margin-top:16px" class="text-muted">
+            <div><strong>Checksum (SHA256):</strong> <code style="opacity:.9">REPLACE_WITH_SHA256_HASH</code></div>
+            <div style="margin-top:8px"><strong>Signature:</strong> Detached GPG signature available (download above).</div>
+          </div>
+        </div>
+
+
+        </div>
+      </div>
+
+      <aside>
+        <div class="card">
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h4>Supported architectures</h4>
+          <p class="text-muted">x86_64 (recommended), aarch64 (community builds)</p>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h4>Need help?</h4>
+          <p class="text-muted">Ask on <a href="#" style="color:inherit">community chat</a> or open an issue on <a href="#" style="color:inherit">GitHub</a>.</p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="container footer">
+    <div>© 2025 NovaOS — Downloads</div>
+  </footer>
+</body>
+</html>

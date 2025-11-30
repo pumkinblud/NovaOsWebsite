@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NovaOS — Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <div class="brand"><div class="logo">N</div><div class="title">NovaOS</div></div>
+      <nav class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="download.html">Download</a>
+        <a href="docs.html">Docs</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <label for="menu-toggle" class="hamburger"><span></span></label>
+      <input id="menu-toggle" type="checkbox" />
+      <aside class="mobile-drawer">
+        <a href="index.html">Home</a><a href="download.html">Download</a><a href="docs.html">Docs</a><a href="contact.html">Contact</a>
+      </aside>
+    </div>
+  </header>
+
+  <main class="container page">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:18px">
+      <div>
+        <h1 class="page-title">Contact the NovaOS Team</h1>
+        <p class="page-sub text-muted">Bug reports, press, contributor inquiries or general questions — we’d love to hear from you.</p>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div>
+        <form class="card" action="mailto:youremail@example.com" method="POST" enctype="text/plain">
+          <div class="field">
+            <label class="text-muted">Name</label>
+            <input class="input" type="text" name="name" required placeholder="Your full name">
+          </div>
+
+          <div class="field">
+            <label class="text-muted">Email</label>
+            <input class="input" type="email" name="email" required placeholder="you@example.com">
+          </div>
+
+          <div class="field">
+            <label class="text-muted">Subject</label>
+            <input class="input" name="subject" required placeholder="Subject">
+          </div>
+
+          <div class="field">
+            <label class="text-muted">Message</label>
+            <textarea class="input" name="message" rows="6" placeholder="Tell us what's up..." required></textarea>
+          </div>
+
+          <div style="margin-top:14px;display:flex;gap:12px;align-items:center">
+            <button class="btn" type="submit">Send message</button>
+            <a class="btn-ghost" href="mailto:youremail@example.com">Or email directly</a>
+          </div>
+        </form>
+
+        <div class="card" style="margin-top:12px">
+          <h4 style="margin-bottom:8px">Contribution & Support</h4>
+          <p class="text-muted">Want to help? Check the <a href="docs.html" style="color:inherit">contributing guide</a> and join our chats.</p>
+        </div>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h4>Office</h4>
+          <p class="text-muted">Remote-first project — no physical office. We reply via email and community channels.</p>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h4>Follow Us</h4>
+          <p class="text-muted">GitHub • Mastodon • Matrix • IRC</p>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h4>Security</h4>
+          <p class="text-muted">Report security issues privately to <a href="mailto:security@novaos.example">security@novaos.example</a></p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="container footer">
+    <div>© 2025 NovaOS — Contact</div>
+  </footer>
+</body>
+</html>
